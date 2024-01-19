@@ -28,15 +28,15 @@ public class Main {
 			}
 		}
 		int n[] = new int[25];
-			for (int i4 = 0; i4 < 25; i4++) {
-				n[i4] = i4 * 8;
-				if (i4 <= 12 && i4 % 2 == 0) {
-					System.out.println(n[i4] + " ");
-				}else if (i4 >=13 && i4 <= 24 && i4 % 2 != 0){
-					System.out.println(n[i4] + " ");
-				}else{
-					System.out.println(n[i4]);
-				}
+		for (int i4 = 0; i4 < 25; i4++) {
+			n[i4] = i4 * 8;
+			if (i4 <= 12 && i4 % 2 == 0) {
+				System.out.println(n[i4] + " ");
+			}else if (i4 >=13 && i4 <= 24 && i4 % 2 != 0){
+				System.out.println(n[i4] + " ");
+			}else{
+				System.out.println(n[i4]);
+			}
 		}
 	}
 }
