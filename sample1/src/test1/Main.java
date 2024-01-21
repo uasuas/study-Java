@@ -1,7 +1,5 @@
 package test1;
 
-import java.util.Scanner;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -40,12 +38,16 @@ public class Main {
 				System.out.println(n[i4]);
 			}
 		}
-		Scanner scanner = new Scanner(System.in);
-		int line = scanner.nextInt();
-		if (line % 2 == 0) {
-			System.out.println(line + "(偶数です)");
-		}else if (line % 2 != 0){
-			System.out.println(line + "(奇数です)");
+//		Test1クラスの新スタンスの作成
+		Test1 t = new Test1();
+//		testメソッドを呼び出し
+		t.test();
+//		testNb にTest1のインスタンス変数keyを代入
+		int testNb = t.key;
+		if (testNb % 2 == 0) {
+			System.out.println(testNb + "(偶数です)");
+		}else{
+			System.out.println(testNb + "(奇数です)");
 		}
 		
 	}
