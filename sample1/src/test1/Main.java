@@ -1,5 +1,7 @@
 package test1;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -38,5 +40,13 @@ public class Main {
 				System.out.println(n[i4]);
 			}
 		}
+		Scanner scanner = new Scanner(System.in);
+		int line = scanner.nextInt();
+		if (line % 2 == 0) {
+			System.out.println(line + "(偶数です)");
+		}else if (line % 2 != 0){
+			System.out.println(line + "(奇数です)");
+		}
+		
 	}
 }
