@@ -50,5 +50,18 @@ public class Main {
 			System.out.println(testNb + "(奇数です)");
 		}
 		
+		int n2[] = new int[20];
+		for (int i5 = 0; i5 < 20; i5++) {
+			n2[i5] = i5 * 5;
+			if (i5 == 0 || i5 % 2 != 0) {
+				System.out.println(n2[i5] + ",");
+			}
+		}
+		for (int i5 = 0; i5 < 20; i5++) {
+			n2[i5] = i5 * 5;
+			if (i5 % 2 == 0) {
+				System.out.println(n2[i5] + ",");
+			}
+		}
 	}
 }
