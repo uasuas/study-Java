@@ -2,6 +2,9 @@ package sample1;
 
 public class Main {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 //		if文
@@ -109,6 +112,38 @@ public class Main {
 			
 		}
 		
+		for (int a = 1; a <= 10; a++) {
+			if (a % 2 == 0) {
+				System.out.println(a);
+			}
+		}
+		count2 = 0;
+		total2 = 0;
+		for (int a2 = 1; a2 <= 10; a2++) {
+			if (a2 % 2 == 0) {
+				count2 += 1;
+				total2 = total2 +a2;
+			}
+		}
+		System.out.println(count2);
+		System.out.println(total2);
+		for (int a3 = 1; a3 <= 10; a3++) {
+			if (a3 != 10) {
+				System.out.print(a3 + ",");
+			}else{
+				System.out.print(a3);
+			}
+		}
+		int n2[] = new int[20];
+		for (int a4 = 0; a4 < 20; a4++) {
+			n2[a4] = a4 * 1;
+			if (a4 <= 10 && a4 % 2 != 0) {
+				System.out.print(n2[a4] + ",");
+			}
+			if (a4 >= 11 && a4 <=19 && a4 % 2 == 0) {
+				System.out.print(n2[a4] + ",");
+			}
+		}
 	}
 
 }
