@@ -144,6 +144,14 @@ public class Main {
 				System.out.print(n2[a4] + ",");
 			}
 		}
+		int num[] = {12, 45, 78, 23, 56, 89, 34, 67, 90, 123, 56};
+		int ansnum = 0;
+		for (int inum = 0; inum <= 10; inum++) {
+			if (ansnum < num[inum]) {
+				ansnum = num[inum];
+			}
+		}
+		System.out.println(ansnum);
 	}
 
 }
