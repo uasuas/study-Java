@@ -1,3 +1,4 @@
+package VSC.Java.Java_study.study.src;
 public class Main {
     public static void main(String[] args) {
         int targetValue = 444444444;
