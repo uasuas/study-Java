@@ -30,10 +30,27 @@ public class Study {
 
     // 入力受付。94p
     // 文字列の入力受付
-    String inputString = new java.util.Scanner(System.in).nextLine();
-    System.out.println("入力値は：" + inputString);
-    // 整数の入力受付
-    int inputInt = new java.util.Scanner(System.in).nextInt();
-    System.out.println("入力値は：" + inputInt);
+    // String inputString = new java.util.Scanner(System.in).nextLine();
+    // System.out.println("入力値は：" + inputString);
+    // // 整数の入力受付
+    // int inputInt = new java.util.Scanner(System.in).nextInt();
+    // System.out.println("入力値は：" + inputInt);
+
+    // 練習問題2-3。98p
+    String text1 = """
+        ようこそ占いの館へ
+        ↓あなたの名前を入力してください
+        """;
+    System.out.print(text1);
+    String inputname = new java.util.Scanner(System.in).nextLine();
+    String text2 = "あなたの年齢を入力してください＞";
+    System.out.print(text2);
+    String inputage = new java.util.Scanner(System.in).nextLine();
+    int conversionage = Integer.parseInt(inputage);
+    int fortune = new java.util.Random().nextInt(3);
+    fortune++;
+    String text3 = "占いの結果が出ました。\n"
+     + conversionage + "歳の" + inputname + "さん、あなたのラッキーナンバーは" + fortune + "です。";
+    System.out.print(text3);
   }
 }
