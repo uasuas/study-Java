@@ -28,5 +28,12 @@ public class Study {
     int random = new java.util.Random().nextInt(50);
     System.out.println(random + "歳？");
 
+    // 入力受付。94p
+    // 文字列の入力受付
+    String inputString = new java.util.Scanner(System.in).nextLine();
+    System.out.println("入力値は：" + inputString);
+    // 整数の入力受付
+    int inputInt = new java.util.Scanner(System.in).nextInt();
+    System.out.println("入力値は：" + inputInt);
   }
 }
