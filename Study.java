@@ -16,5 +16,10 @@ public class Study {
     int a2 = 10;
     System.out.println(a1++ + 50); //出力60
     System.out.println(++a2 + 50); //出力61
+
+    // 文字列を整数に変換。
+    String age = "30";
+    int age2 = Integer.parseInt(age);
+    System.out.println(age2 + 1);
   }
 }
