@@ -18,9 +18,15 @@ public class Study {
     System.out.println(a1++ + 50); //出力60
     System.out.println(++a2 + 50); //出力61
 
-    // 文字列を整数に変換。93p
+    // 文字列を整数に変換。92p
     String age = "30";
     int age2 = Integer.parseInt(age);
     System.out.println(age2 + 1);
+
+    // 乱数を発生。93p
+    // nextInt(上限値)
+    int random = new java.util.Random().nextInt(50);
+    System.out.println(random + "歳？");
+
   }
 }
