@@ -94,5 +94,15 @@ public class Study {
         System.out.println("お腹の減り具合。");
       }
     };
+
+    // 練習問題3-4。135p
+    boolean tenki = true;
+    if (tenki == true){
+      System.out.println("洗濯します。");
+      System.out.println("散歩に行きます。");
+    } else {
+      System.out.println("映画を観ます。");
+      System.out.println("寝ます。");
+    }
   }
 }
