@@ -37,20 +37,31 @@ public class Study {
     // System.out.println("入力値は：" + inputInt);
 
     // 練習問題2-3。98p
-    String text1 = """
-        ようこそ占いの館へ
-        ↓あなたの名前を入力してください
-        """;
-    System.out.print(text1);
-    String inputname = new java.util.Scanner(System.in).nextLine();
-    String text2 = "あなたの年齢を入力してください＞";
-    System.out.print(text2);
-    String inputage = new java.util.Scanner(System.in).nextLine();
-    int conversionage = Integer.parseInt(inputage);
-    int fortune = new java.util.Random().nextInt(3);
-    fortune++;
-    String text3 = "占いの結果が出ました。\n"
-     + conversionage + "歳の" + inputname + "さん、あなたのラッキーナンバーは" + fortune + "です。";
-    System.out.print(text3);
+    // String text1 = """
+    //     ようこそ占いの館へ
+    //     ↓あなたの名前を入力してください
+    //     """;
+    // System.out.print(text1);
+    // String inputname = new java.util.Scanner(System.in).nextLine();
+    // String text2 = "あなたの年齢を入力してください＞";
+    // System.out.print(text2);
+    // String inputage = new java.util.Scanner(System.in).nextLine();
+    // int conversionage = Integer.parseInt(inputage);
+    // int fortune = new java.util.Random().nextInt(3);
+    // fortune++;
+    // String text3 = "占いの結果が出ました。\n"
+    //  + conversionage + "歳の" + inputname + "さん、あなたのラッキーナンバーは" + fortune + "です。";
+    // System.out.print(text3);
+
+    // 文字列の比較。112p
+    // どちらも表示されるが、前者は『コンパイルエラーが起きずに挙動がおかしい』などの不具合が出る可能性がある。
+    // その為、後者であるequalsを使用する。
+    String str = "文字列";
+    if (str == "文字列"){
+      System.out.println(str);
+    }
+    if (str.equals("文字列")){
+      System.out.println(str);
+    }
   }
 }
