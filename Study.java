@@ -77,5 +77,22 @@ public class Study {
     //     }
     //   }
     // }
+
+    // 練習問題3-3。134p
+    int isHungry = new java.util.Random().nextInt(2);
+    String food = "ハンバーガー";
+    System.out.println("こんにちは");
+    switch (isHungry) {
+      case 0 -> {
+        System.out.println("お腹いっぱいです。");
+      }
+      case 1 -> {
+        System.out.println("腹ペコです。");
+        System.out.println(food + "をいただきます。");
+      }
+      default -> {
+        System.out.println("お腹の減り具合。");
+      }
+    };
   }
 }
