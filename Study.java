@@ -63,5 +63,19 @@ public class Study {
     if (str.equals("文字列")){
       System.out.println(str);
     }
+
+    // 練習問題3-1。134p
+    // int weight = 60;
+    // int age01 = new java.util.Scanner(System.in).nextInt();
+    // int age02 = new java.util.Scanner(System.in).nextInt();
+    // String name01 = new java.util.Scanner(System.in).nextLine();
+    // if (weight == 60){
+    //   int totalage = age01 + age02;
+    //   if (totalage > 60 && totalage % 2 != 0){
+    //     if (name01.equals("湊")){
+    //       System.out.println("ok");
+    //     }
+    //   }
+    // }
   }
 }
