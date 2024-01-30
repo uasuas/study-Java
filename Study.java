@@ -130,5 +130,21 @@ public class Study {
         System.out.println("メニューからお選び下さい。");
       }
     };
+
+    // 練習問題3-6。136p
+    System.out.println("[数字当てゲーム]");
+    int ans = new java.util.Random().nextInt(9);
+    for (int i = 0; i < 5; i++){
+      System.out.println("0~9の数字を入力してください。");
+      // int num = new java.util.Scanner(System.in).nextInt();
+      int num = new java.util.Random().nextInt(9);
+      if (ans == num){
+        System.out.println("あたり");
+        break;
+      } else {
+        System.out.println("違うよ");
+      }
+    }
+    System.out.println("ゲームセット");
   }
 }
