@@ -104,5 +104,31 @@ public class Study {
       System.out.println("映画を観ます。");
       System.out.println("寝ます。");
     }
+
+    // 練習問題3-5。136p
+    String menu1 = "検索";
+    String menu2 = "登録";
+    String menu3 = "削除";
+    String menu4 = "変更";
+    System.out.println("[メニュー]" + " 1:" + menu1 + " 2:" + menu2 + " 3:" + menu3 + " 4:" + menu4);
+    int selected = new java.util.Random().nextInt(4);
+    selected++;
+    switch (selected){
+      case 1 -> {
+        System.out.println(menu1 + "します。");
+      }
+      case 2 -> {
+        System.out.println(menu2 + "します。");
+      }
+      case 3 -> {
+        System.out.println(menu3 + "します。");
+      }
+      case 4 -> {
+        System.out.println(menu4 + "します。");
+      }
+      default -> {
+        System.out.println("メニューからお選び下さい。");
+      }
+    };
   }
 }
