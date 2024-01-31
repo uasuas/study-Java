@@ -29,5 +29,20 @@ public class Chapter4 {
     for (int i = 0; i < scores3.length; i++){
       System.out.println(scores3[i]);
     }
+
+    // DNAの記号をランダムに表示。154p
+    int[] random = new int[10];
+    for (int i = 0; i < random.length; i++){
+      random[i] = new java.util.Random().nextInt(4);
+    }
+    // cherは''を使う
+    // char[] dna = {'A', 'T', 'G', 'C'};
+    // Stringは""を使う
+    String[] dna = {"A", "T", "G", "C"};
+    for (int i = 0; i < random.length; i++){
+      // dnaの中から[random[ランダムに生成された整数]]の数値に対応する文字列を取得
+      System.out.print(dna[random[i]] + " ");
+    }
+
   }
 }
