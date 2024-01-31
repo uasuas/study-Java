@@ -5,11 +5,17 @@ public class Chapter4 {
     // 配列の作成手順。144p
     // 短縮前
     // int[] scores;
+    // intの要素を5つ作成
     // scores = new int[5];
     // 短縮型
     int[] scores = new int[5];
     // 配列の要素数を取得
     int num = scores.length;
-    System.out.println(num);
+    scores[1] = 30; 
+    System.out.println(num + scores[1]);
+
+    // 配列の作成と初期値。147p
+    int[] scores1 = {10, 20, 30, 40, 50};
+    System.out.println(scores1[2]);
   }
 }
