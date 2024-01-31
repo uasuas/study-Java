@@ -23,5 +23,11 @@ public class Chapter4 {
     int sum = scores2[0] + scores2[1] + scores2[2] + scores2[3] + scores2[4];
     int avg = sum / scores2.length;
     System.out.println("平均:" + avg);
+
+    // 配列とfor。150p
+    int[] scores3 = {20, 30, 40, 60, 100};
+    for (int i = 0; i < scores3.length; i++){
+      System.out.println(scores3[i]);
+    }
   }
 }
