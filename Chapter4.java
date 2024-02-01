@@ -53,5 +53,17 @@ public class Chapter4 {
     // 文字列の長さの取得。165p
     String str = "Java開発";
     System.out.println(str.length());
+
+    // 多次元配列。167p
+    // [0,0][0,1][0,2]->[40][50][60]
+    // [1,0][1,1][1,2]->[80][60][70]
+    int[][] scores5 = new int[2][3];
+    scores5[0][0] = 40;
+    scores5[0][1] = 50;
+    scores5[0][2] = 60;
+    scores5[1][0] = 80;
+    scores5[1][1] = 60;
+    scores5[1][2] = 70;
+    System.out.println(scores5[1][1]);
   }
 }
