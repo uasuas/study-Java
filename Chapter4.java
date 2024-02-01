@@ -44,5 +44,10 @@ public class Chapter4 {
       System.out.print(dna[random[i]] + " ");
     }
 
+    // 拡張for文。157p
+    int[] scores4 = {20, 30, 40, 50, 80};
+    for (int value : scores4) {
+      System.out.println(value);
+    }
   }
 }
