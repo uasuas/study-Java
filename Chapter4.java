@@ -49,5 +49,9 @@ public class Chapter4 {
     for (int value : scores4) {
       System.out.println(value);
     }
+    
+    // 文字列の長さの取得。165p
+    String str = "Java開発";
+    System.out.println(str.length());
   }
 }
