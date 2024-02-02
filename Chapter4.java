@@ -81,7 +81,7 @@ public class Chapter4 {
       System.out.println(ans);
     }
 
-    // 練習問題4-3。171p
+    // 練習問題4-4。171p
     int[] numbers = {3, 4, 9};
     System.out.println("1桁の数字を入力してください。");
     int input = new java.util.Scanner(System.in).nextInt();
