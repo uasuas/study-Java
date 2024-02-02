@@ -65,5 +65,11 @@ public class Chapter4 {
     scores5[1][1] = 60;
     scores5[1][2] = 70;
     System.out.println(scores5[1][1]);
+
+    // 練習問題4-1。170p
+    int[] points = new int[4];
+    double[] weights = new double[5];
+    boolean[] answers = new boolean[3];
+    String[] names = new String[3];
   }
 }
