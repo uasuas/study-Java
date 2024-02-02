@@ -71,5 +71,14 @@ public class Chapter4 {
     double[] weights = new double[5];
     boolean[] answers = new boolean[3];
     String[] names = new String[3];
+
+    // 練習問題4-2。170p
+    int[] moneyList = {121902, 8302, 55100};
+    for (int i = 0; i < moneyList.length; i++){
+      System.out.println(moneyList[i]);
+    }
+    for (int ans : moneyList){
+      System.out.println(ans);
+    }
   }
 }
