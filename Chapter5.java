@@ -7,6 +7,8 @@ public class Chapter5 {
     A();
     add(100, 20);
     add(200, 50);
+    int ans2 = add2(100, 30);
+    System.out.println("100 + 30 = " + ans2);
   }
   public static void hello() {
     System.out.println("こんにちは");
@@ -24,5 +26,11 @@ public class Chapter5 {
   public static void add(int x, int y) {
     int ans = x + y;
     System.out.println(x + "+" + y + "=" + ans);
+  }
+  // 戻り値を利用したメソッド呼び出し。192p
+  // int add2()になっている点に注意。
+  public static int add2(int x, int y) {
+    int ans = x + y;
+    return ans;
   }
 }
