@@ -2,20 +2,6 @@ package VSC.Java.Java_study;
 
 public class Chapter5 {
   // メソットの呼び出し。178p
-  public static void main(String[] args) {
-    hello();
-    A();
-    add(100, 20);
-    add(200, 50);
-    int ans2 = add2(100, 30);
-    System.out.println("100 + 30 = " + ans2);
-    // 戻り値をそのまま使う。194p
-    // ans=(x+y)+(x+y)
-    // ans=(x+y)
-    // ans=(1+2)+(2+5)
-    // 10=(3+7)結果10が出力される。
-    System.out.println(add2(add2(1, 2), add2(2, 5)));
-  }
   public static void hello() {
     System.out.println("こんにちは");
   }
@@ -39,5 +25,36 @@ public class Chapter5 {
   public static int add2(int x, int y) {
     int ans = x + y;
     return ans;
+  }
+  // オーバーロード。198p
+  public static int add3(int x, int y) {
+    return x + y;
+  }
+  public static double add3(double x, double y) {
+    return x + y;
+  }
+  public static String add3(String x, String y) {
+    return x + y;
+  }
+  public static void main(String[] args) {
+    hello();
+    A();
+    add(100, 20);
+    add(200, 50);
+    int ans2 = add2(100, 30);
+    System.out.println("100 + 30 = " + ans2);
+    // 戻り値をそのまま使う。194p
+    // ans=(x+y)+(x+y)
+    // ans=(x+y)
+    // ans=(1+2)+(2+5)
+    // 10=(3+7)結果10が出力される。
+    System.out.println(add2(add2(1, 2), add2(2, 5)));
+    // オーバーロード
+    System.out.println(add3(1, 2));
+    // 結果が3.3000000000000003となるのは、浮動小数点数の丸め誤差によるもので、
+    // Javaのdouble型は、浮動小数点数を近似して表現している。
+    // そのため、計算結果が完全に正確な値になることは稀で、小数点以下の桁数が正確でない場合がある。
+    System.out.println(add3(1.1, 2.2));
+    System.out.println(add3("Hallo", "World"));
   }
 }
