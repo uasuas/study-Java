@@ -35,6 +35,7 @@ public class Chapter5 {
   }
   // 戻り値を利用したメソッド呼び出し。192p
   // int add2()になっている点に注意。
+  // returnはメソッドの終了も行う点に注意。
   public static int add2(int x, int y) {
     int ans = x + y;
     return ans;
