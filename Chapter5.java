@@ -9,6 +9,12 @@ public class Chapter5 {
     add(200, 50);
     int ans2 = add2(100, 30);
     System.out.println("100 + 30 = " + ans2);
+    // 戻り値をそのまま使う。194p
+    // ans=(x+y)+(x+y)
+    // ans=(x+y)
+    // ans=(1+2)+(2+5)
+    // 10=(3+7)結果10が出力される。
+    System.out.println(add2(add2(1, 2), add2(2, 5)));
   }
   public static void hello() {
     System.out.println("こんにちは");
