@@ -5,6 +5,8 @@ public class Chapter5 {
   public static void main(String[] args) {
     hello();
     A();
+    add(100, 20);
+    add(200, 50);
   }
   public static void hello() {
     System.out.println("こんにちは");
@@ -17,5 +19,10 @@ public class Chapter5 {
   // 引数にて内容を変更する。184p
   public static void B(String name) {
     System.out.println(name + "というメソッドです");
+  }
+  // intの引数利用。186p
+  public static void add(int x, int y) {
+    int ans = x + y;
+    System.out.println(x + "+" + y + "=" + ans);
   }
 }
