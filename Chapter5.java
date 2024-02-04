@@ -36,6 +36,10 @@ public class Chapter5 {
   public static String add3(String x, String y) {
     return x + y;
   }
+  // オーバーロードの引数の数が違う場合。198p
+  public static int add3(int x, int y, int z) {
+    return x + y + z;
+  }
   public static void main(String[] args) {
     hello();
     A();
@@ -56,5 +60,7 @@ public class Chapter5 {
     // そのため、計算結果が完全に正確な値になることは稀で、小数点以下の桁数が正確でない場合がある。
     System.out.println(add3(1.1, 2.2));
     System.out.println(add3("Hallo", "World"));
+    // オーバーロードの引数の数が違う場合。198p
+    System.out.println(add3(100, 20, 30));
   }
 }
