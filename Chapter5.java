@@ -40,6 +40,16 @@ public class Chapter5 {
   public static int add3(int x, int y, int z) {
     return x + y + z;
   }
+  // 配列を引数で渡す。200p
+  public static void printArray(int[] array) {
+    for (int element : array) {
+      System.out.println(element);
+    }
+  }
+  public static void array() {
+    int[] array = {1, 2, 3};
+    printArray(array);
+  }
   public static void main(String[] args) {
     hello();
     A();
@@ -62,5 +72,7 @@ public class Chapter5 {
     System.out.println(add3("Hallo", "World"));
     // オーバーロードの引数の数が違う場合。198p
     System.out.println(add3(100, 20, 30));
+    // 配列を引数で渡す。200p
+    array();
   }
 }
