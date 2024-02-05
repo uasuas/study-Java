@@ -50,6 +50,24 @@ public class Chapter5 {
     int[] array = {1, 2, 3};
     printArray(array);
   }
+  // 参照渡し。202p
+  // 仕様：変数の置いてある場所を渡す。
+  // 特徴：変数の中身を書き換えると呼び出し元の変数の中身も書き変わる。
+  public static void incArray(int[] array) {
+    for (int i = 0; i < array.length; i++) {
+      array[i]++;
+    }
+  }
+  public static void array2() {
+    int[] array = {1, 2, 3};
+    incArray(array);
+    // 書き換わっていることの確認。
+    printArray(array);
+    for (int i : array) {
+      System.out.println(i);
+    }
+  }
+  
   public static void main(String[] args) {
     hello();
     A();
@@ -74,5 +92,7 @@ public class Chapter5 {
     System.out.println(add3(100, 20, 30));
     // 配列を引数で渡す。200p
     array();
+    // 参照渡し。202p
+    array2();
   }
 }
