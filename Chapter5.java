@@ -67,7 +67,20 @@ public class Chapter5 {
       System.out.println(i);
     }
   }
-  
+  // 戻り値が配列。204p
+  public static int[] makeArray(int size) {
+    int[] newArray = new int[size];
+    for (int i = 0; i < newArray.length; i++) {
+      newArray[i] = i;
+    }
+    return newArray;
+  }
+  public static void array3() {
+    int[] array = makeArray(3);
+    for (int i : array) {
+      System.out.println(array[i]);
+    }
+  }
   public static void main(String[] args) {
     hello();
     A();
@@ -94,5 +107,7 @@ public class Chapter5 {
     array();
     // 参照渡し。202p
     array2();
+    // 戻り値が配列。204p
+    array3();
   }
 }
