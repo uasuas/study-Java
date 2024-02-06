@@ -68,17 +68,17 @@ public class Chapter5 {
     }
   }
   // 戻り値が配列。204p
-  public static int[] makeArray(int size) {
-    int[] newArray = new int[size];
+  public static int[] makeArray(int size) {//makeArray メソッドは、指定されたサイズの配列を作成。
+    int[] newArray = new int[size];//引数 size で指定されたサイズの新しい int 型の配列 newArray を作成。
     for (int i = 0; i < newArray.length; i++) {
       newArray[i] = i;
     }
     return newArray;
   }
   public static void array3() {
-    int[] array = makeArray(3);
+    int[] array = makeArray(3);//makeArray メソッドを使用してサイズが 3 の配列を作成
     for (int i : array) {
-      System.out.println(array[i]);
+      System.out.println(i);//拡張forループでは、各要素自体が取得されるため  array[i]  ではなく  i  で良い。
     }
   }
   public static void main(String[] args) {
