@@ -76,10 +76,18 @@ public class Chapter5 {
     return newArray;//作成した配列 newArray を返す。
   }
   public static void array3() {
-    int[] array = makeArray(3);//makeArray メソッドを使用してサイズが 3 の配列を作成
+    int[] array = makeArray(3);//makeArray メソッドを使用してサイズが 3 の配列を作成、メソッドからreturnされた新しい配列のnewArrayがarrayに代入される。
     for (int i : array) {
       System.out.println(i);//拡張forループでは、各要素自体が取得されるため  array[i]  ではなく  i  で良い。
     }
+  }
+  // 練習問題5-1。209p
+  public static void introduceOneself() {
+    String name = "ゆーたあ";
+    int age = 22;
+    double height = 298.8;
+    char zodiac = '馬';
+    System.out.println("私の名前は" + name + "です。歳は" + age + "です。身長は" + height + "cmです。十二支というか正体は" + zodiac + "です。");
   }
   public static void main(String[] args) {
     hello();
@@ -109,5 +117,7 @@ public class Chapter5 {
     array2();
     // 戻り値が配列。204p
     array3();
+    // 練習問題5-1。209p
+    introduceOneself();
   }
 }
