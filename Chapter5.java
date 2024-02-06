@@ -73,7 +73,7 @@ public class Chapter5 {
     for (int i = 0; i < newArray.length; i++) {
       newArray[i] = i;
     }
-    return newArray;
+    return newArray;//作成した配列 newArray を返す。
   }
   public static void array3() {
     int[] array = makeArray(3);//makeArray メソッドを使用してサイズが 3 の配列を作成
