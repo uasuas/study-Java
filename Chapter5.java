@@ -89,6 +89,14 @@ public class Chapter5 {
     char zodiac = '馬';
     System.out.println("私の名前は" + name + "です。歳は" + age + "です。身長は" + height + "cmです。十二支というか正体は" + zodiac + "です。");
   }
+  public static void content(String address, String title, String text) {
+    System.out.println(address + "に、以下のメールを送信しました。");
+    System.out.println("件名：" + title);
+    System.out.println("本文：" + text);
+  }
+  public static void email() {
+    content("メールの宛先アドレス", "メールのタイトル", "メールの本文");
+  }
   public static void main(String[] args) {
     hello();
     A();
@@ -119,5 +127,6 @@ public class Chapter5 {
     array3();
     // 練習問題5-1。209p
     introduceOneself();
+    email();
   }
 }
